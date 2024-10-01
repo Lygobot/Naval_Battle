@@ -1,6 +1,6 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "utils.h"
 #define N 10 /* N deve essere pari, in questo caso ho una tabella 10x10 */ 
 
 /* 2 navi da 1, 2 navi da 2, 1 nave da 3, 1 nave da 4, 1 nave da 5 , totale 7 barche*/
@@ -284,19 +284,3 @@ void inizializza_tab(cella m[][N]){
 	}
 }
 
-void schiaccia_invio_per_continuare_1(){
-    printf("\nGiocatore 1 premi invio per far giocare il giocatore 2...\n");
-    fflush(stdin);
-    while(getchar()!='\n');
-}
-
-void schiaccia_invio_per_continuare_2(){
-    printf("\nGiocatore 2 premi invio per far giocare il giocatore 1...\n");
-    fflush(stdin);
-    while(getchar()!='\n');
-}
-
-void schiaccia_invio_per_continuare_solo_invio(){
-    fflush(stdin);
-    while(getchar()!='\n');
-}
